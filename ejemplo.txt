@@ -1,0 +1,45 @@
+1-. crear proyecto (la idea es consumir la api con axios).
+npx create-react-app rickandmorty
+
+2-. instalar react-ruoter-dom@6 y axios.
+npm install react-router-dom@6 axios 
+
+3-. una vez instalado borrar estas carpetas ya que no se usarán:
+App.test.js
+logo.svg
+reportWebVitals.js
+setupTest.hs
+
+4-.index.js es el punto de entrada inicial
+
+5-. en index.js import reportWebVitals from './reportWebVitals'; 
+reportWebVitals();
+
+6-. En App.js sacar los imports de los logos y el del App.css.
+
+7.- RUTAS Y COMPONENTES
+
+8-.Las rutas EN app.js se importa.
+
+	En app.js
+
+9-. EN package.json están las librerías, ahí estará el que se usará  "react-router-dom": "^6.4.3". Se usan para las rutas 
+
+10-. Por cada ruta se usa <Route>, eso usa dos argumentos: path, y element.
+	Ahora se crea la estructura de carpetas, dentro de source 
+	crear carpeta (components y funciones).
+	Dentro de carpeta components > crear archivo Inicio.jsx y Personaje.jsx
+	
+	En cada componente creado, se importa react, se crea const del componente,
+	se retorna y se exporta default componente.
+
+11-. En index.css se creo la clase contenedor, dentro de App.js, en className del div
+     Se llamó esa clase contenedor.
+
+12-. Dentro de la carpeta funciones se crea el archivo funciones.js, y se importa
+import axios from "axios";
+En funciones.js se crarán las funciones que hagan las peticiones a las apis, y desde los
+componentes llamar estas funciones, para no tener la lógica dentro del componente. 
+
+En funciones.js, siempre que se crea una función hay que exportarla, las funciones son
+arrow function async
